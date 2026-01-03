@@ -37,7 +37,7 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**")
+                        .requestMatchers("/**")
                         .permitAll()
                         .anyRequest()
                         .hasAnyAuthority(UserType.ADMIN.name(), UserType.USER.name())

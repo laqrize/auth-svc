@@ -2,9 +2,9 @@ package pl.ros.authsvc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
-import pl.ros.commons.config.CommonsAutoConfiguration;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+@EnableDiscoveryClient
 @SpringBootApplication
 //@Import(CommonsAutoConfiguration.class)
 public class AuthSvcApplication {
