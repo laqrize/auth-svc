@@ -1,4 +1,4 @@
-package pl.ros.authsvc.infrastracture.config;
+package pl.ros.authsvc.infrastructure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
